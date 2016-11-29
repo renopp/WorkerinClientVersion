@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "819602651798",
+    "firebase_url": "https://workerin-2e074.firebaseio.com",
+    "project_id": "workerin-2e074",
+    "storage_bucket": "workerin-2e074.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819602651798:android:6f8e4ca91c8b6509",
+        "android_client_info": {
+          "package_name": "com.workerin.nore.workerinclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819602651798-ob3v78lcgv6f3aehbvsjonnhp9s7spth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC44qJnTPGuYZ2qtClSfIihtC7npFbDOxE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

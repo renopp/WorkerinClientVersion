@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WorkerinClient</string>
+    <string name="radio_male">Laki-Laki</string>
+    <string name="radio_female">Perempuan</string>
+</resources>

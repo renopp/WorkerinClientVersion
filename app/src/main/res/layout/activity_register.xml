@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.workerin.nore.workerinclient.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/RegistUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"/>
+
+
+        <EditText
+            android:id="@+id/RegistPass1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            />
+
+        <EditText
+            android:id="@+id/RegistPass2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ulangi Password"
+            android:inputType="textPassword"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            />
+
+        <EditText
+            android:id="@+id/RegistNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"/>
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:textSize="18dp"/>
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_male"
+                android:checked="true"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:textColorLink="@color/White"
+                />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_female"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"/>
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/RegistEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            />
+
+
+        <EditText
+            android:id="@+id/RegistNope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No. Handphone"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"/>
+
+        <Button
+            android:id="@+id/btnConfirmRegist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+</RelativeLayout>
