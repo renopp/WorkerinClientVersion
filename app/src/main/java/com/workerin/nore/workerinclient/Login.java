@@ -24,7 +24,9 @@ import static java.security.AccessController.getContext;
 
 public class Login extends AppCompatActivity {
 
-    Button registerButton, loginButton, btntest;
+    Button registerButton, loginButton;
+    private EditText inputEmail, inputPassword;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,15 +41,12 @@ public class Login extends AppCompatActivity {
 
         registerButton = (Button) findViewById(R.id.btnRegist);
         loginButton = (Button) findViewById(R.id.btnLogin);
-        btntest = (Button) findViewById(R.id.buttonzz);
 
-        btntest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent map = new Intent(getApplicationContext(),MapsActivity.class);
-                startActivity(map);
-            }
-        });
+
+        inputEmail = (EditText) findViewById(R.id.inUser);
+        inputPassword = (EditText) findViewById(R.id.inPass);
+
+
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

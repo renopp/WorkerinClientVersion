@@ -14,22 +14,18 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class Home extends AppCompatActivity {
+public class Home extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
 
 //    //This is our tablayout
-//    private TabLayout tabLayout;
+    private TabLayout tabLayout;
 //
 //    //This is our viewPager
-//    private ViewPager viewPager;
-//    private Toolbar toolbar;
+    private ViewPager viewPager;
+    private Toolbar toolbar;
 
     //firebase
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-
-    private  Button btnMap;
-
-    private  Button btnMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
