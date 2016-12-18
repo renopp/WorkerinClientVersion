@@ -19,16 +19,16 @@
         android:paddingTop="@dimen/activity_vertical_margin">
 
         <EditText
-            android:id="@+id/RegistUser"
+            android:id="@+id/signUpEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="Email"
             android:textColor="@color/White"
             android:textColorHint="@color/White"/>
 
 
         <EditText
-            android:id="@+id/RegistPass1"
+            android:id="@+id/signUpPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -37,7 +37,7 @@
             android:textColorHint="@color/White"
             />
 
-        <EditText
+       <!-- <EditText
             android:id="@+id/RegistPass2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,17 +45,17 @@
             android:inputType="textPassword"
             android:textColor="@color/White"
             android:textColorHint="@color/White"
-            />
+            />-->
 
-        <EditText
+       <!-- <EditText
             android:id="@+id/RegistNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama"
             android:textColor="@color/White"
-            android:textColorHint="@color/White"/>
+            android:textColorHint="@color/White"/>-->
 
-        <RadioGroup
+       <!-- <RadioGroup
             android:id="@+id/radioSex"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,34 +88,64 @@
                 android:textColor="@color/White"
                 android:textColorHint="@color/White"/>
 
-        </RadioGroup>
+        </RadioGroup>-->
 
 
-        <EditText
+        <!--<EditText
             android:id="@+id/RegistEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-mail"
             android:textColor="@color/White"
             android:textColorHint="@color/White"
-            />
+            />-->
 
 
-        <EditText
+      <!--  <EditText
             android:id="@+id/RegistNope"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="No. Handphone"
             android:textColor="@color/White"
-            android:textColorHint="@color/White"/>
+            android:textColorHint="@color/White"/>-->
+
 
         <Button
-            android:id="@+id/btnConfirmRegist"
+            android:id="@+id/btn_reset_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:text="Forgot your password ?"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/daftarEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="REGISTER"
             android:backgroundTint="@color/colorAccent"
             android:onClick="onClick"/>
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:text="Alerdy registered. Login Me!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
 
 </RelativeLayout>

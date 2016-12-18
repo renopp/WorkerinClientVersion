@@ -33,8 +33,7 @@ dependencies {
     compile 'com.android.support:design:25.0.1'
     compile 'com.android.support:multidex:+'
     compile 'com.android.support:recyclerview-v7:25.0.1'
+
+
 }
-
-
-
-apply plugin: 'com.google.gms.google-services'
+    apply plugin: 'com.google.gms.google-services'
