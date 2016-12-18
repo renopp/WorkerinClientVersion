@@ -5,6 +5,7 @@
     <color name="colorAccent">#F1C40F</color>
     <color name="colorAccentDark">#c89600</color>
     <color name="White">#FFFFFF</color>
+    <color name="Grey">#F5F5F5</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>

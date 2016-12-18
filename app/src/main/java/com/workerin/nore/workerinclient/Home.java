@@ -27,72 +27,50 @@ public class Home extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
+    private  Button btnMap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-//        toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        //Initializing the tablayout
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+
+        tabLayout.addTab(tabLayout.newTab().setText("Map"));
+        tabLayout.addTab(tabLayout.newTab().setText("Message"));
+        tabLayout.addTab(tabLayout.newTab().setText("Profile"));
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        //Initializing viewPager
+        viewPager = (ViewPager) findViewById(R.id.pager);
+
+        //Creating our pager adapter
+        Pager adapter = new Pager(getSupportFragmentManager(), tabLayout.getTabCount());
+
+        //Adding adapter to pager
+        viewPager.setAdapter(adapter);
+
+        tabLayout.addOnTabSelectedListener(this);
+
+    }
 
 
-        //firebase
-        //get firebase auth instance
-        mAuth = FirebaseAuth.getInstance();
+    public void onTabSelected(TabLayout.Tab tab) {
+        viewPager.setCurrentItem(tab.getPosition());
 
-        //get current user
-        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user == null) {
-                    // user auth state is changed - user is null
-                    // launch login activity
-                    startActivity(new Intent(Home.this, Login.class));
-                    finish();
-                }
-            }
-        };
+    }
 
 
-//        //Initializing the tablayout
-//        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-//
-//        tabLayout.addTab(tabLayout.newTab().setText("Map"));
-//        tabLayout.addTab(tabLayout.newTab().setText("Message"));
-//        tabLayout.addTab(tabLayout.newTab().setText("Profile"));
-//        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-//
-//        //Initializing viewPager
-//        viewPager = (ViewPager) findViewById(R.id.pager);
-//
-//        //Creating our pager adapter
-//        Pager adapter = new Pager(getSupportFragmentManager(), tabLayout.getTabCount());
-//
-//        //Adding adapter to pager
-//        viewPager.setAdapter(adapter);
-//
-//        tabLayout.addOnTabSelectedListener(this);
-//
-//
-//    }
+    public void onTabUnselected(TabLayout.Tab tab) {
+
+    }
 
 
-//    public void onTabSelected(TabLayout.Tab tab) {
-//        viewPager.setCurrentItem(tab.getPosition());
-//
-//    }
-//
-//
-//    public void onTabUnselected(TabLayout.Tab tab) {
-//
-//    }
-//
-//
-//    public void onTabReselected(TabLayout.Tab tab) {
-//
-//    }
+    public void onTabReselected(TabLayout.Tab tab) {
+
     }
 }

@@ -18,13 +18,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import static java.security.AccessController.getContext;
+
 public class Login extends AppCompatActivity {
 
-    private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListener;
-    private EditText inputEmail, inputPassword;
-    Button registerButton, loginButton;
-    String TAG="tes";
+    Button registerButton, loginButton, btntest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,28 +37,15 @@ public class Login extends AppCompatActivity {
 
         registerButton = (Button) findViewById(R.id.btnRegist);
         loginButton = (Button) findViewById(R.id.btnLogin);
-        inputEmail = (EditText) findViewById(R.id.inUser);
-        inputPassword = (EditText) findViewById(R.id.inPass);
+        btntest = (Button) findViewById(R.id.buttonzz);
 
-
-
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
+        btntest.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    // User is signed in
-                    Intent tes = new Intent(Login.this,Home.class);
-                    startActivity(tes);
-
-                } else {
-                    // User is signed out
-
-                }
-                // ...
+            public void onClick(View view) {
+                Intent map = new Intent(getApplicationContext(),MapsActivity.class);
+                startActivity(map);
             }
-        };
-
+        });
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
