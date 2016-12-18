@@ -20,6 +20,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 import static java.security.AccessController.getContext;
 
+import static java.security.AccessController.getContext;
+
 public class Login extends AppCompatActivity {
 
     Button registerButton, loginButton, btntest;

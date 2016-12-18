@@ -29,6 +29,8 @@ public class Home extends AppCompatActivity {
 
     private  Button btnMap;
 
+    private  Button btnMap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
