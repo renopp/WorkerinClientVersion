@@ -19,6 +19,8 @@ public class Home extends AppCompatActivity implements TabLayout.OnTabSelectedLi
 
     private Toolbar toolbar;
 
+    private  Button btnMap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,7 @@ public class Home extends AppCompatActivity implements TabLayout.OnTabSelectedLi
         viewPager.setAdapter(adapter);
 
         tabLayout.addOnTabSelectedListener(this);
+
     }
 
 
