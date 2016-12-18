@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "819602651798",
-    "firebase_url": "https://workerin-2e074.firebaseio.com",
-    "project_id": "workerin-2e074",
-    "storage_bucket": "workerin-2e074.appspot.com"
+    "project_number": "639938650592",
+    "firebase_url": "https://worker-52a2d.firebaseio.com",
+    "project_id": "worker-52a2d",
+    "storage_bucket": "worker-52a2d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:819602651798:android:6f8e4ca91c8b6509",
+        "mobilesdk_app_id": "1:639938650592:android:6f8e4ca91c8b6509",
         "android_client_info": {
           "package_name": "com.workerin.nore.workerinclient"
         }
       },
       "oauth_client": [
         {
-          "client_id": "819602651798-ob3v78lcgv6f3aehbvsjonnhp9s7spth.apps.googleusercontent.com",
+          "client_id": "639938650592-fckj6luc8bhhc7hblmicbpaca888cqv8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.workerin.nore.workerinclient",
+            "certificate_hash": "6B1631B3063CF711A04B52C99A1D253FBE85E69B"
+          }
+        },
+        {
+          "client_id": "639938650592-t8fjvup6g4vcl8j4hfpj0g2tr66qe4jp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC44qJnTPGuYZ2qtClSfIihtC7npFbDOxE"
+          "current_key": "AIzaSyCohR3qAA5RxvnKcC_Wweg_x7Bhw-gpYeg"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639938650592-t8fjvup6g4vcl8j4hfpj0g2tr66qe4jp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
