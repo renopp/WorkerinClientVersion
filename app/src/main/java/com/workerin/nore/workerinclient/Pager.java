@@ -27,6 +27,7 @@ public class Pager extends FragmentStatePagerAdapter {
                 return tab2;
             case 2:
                 Profile tab3 = new Profile();
+
                 return tab3;
             default:
                 return null;

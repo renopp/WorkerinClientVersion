@@ -2,7 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView"
@@ -11,5 +16,18 @@
         android:layout_centerInParent="true"
         android:text="Profile"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="LOG OUT"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/colorAccent"
+            />
 
+    </RelativeLayout>
 </RelativeLayout>
